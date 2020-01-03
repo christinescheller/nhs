@@ -9759,7 +9759,7 @@ textarea.form-control {
 /* If the screen size is 601px or more, set the font-size of <div> to 30px */
 @media only screen and (min-width: 601px) {
   .brandSize {
-    font-size: 45px;
+    font-size: 30px;
   }
 }
 

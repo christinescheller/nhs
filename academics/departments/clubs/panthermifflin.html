@@ -37,7 +37,7 @@
   <body>
 
         	
-      <button onclick="topFunction()" id="myBtn" title="Go to top"><em class="ion-ios-arrow-up"></em></button>
+      <i class="fa fa-arrow-circle-o-up fa-3x scrollToTop"></i>
     
 	
     <!--NAV-->
@@ -188,5 +188,28 @@
   
 
       
-    </body>
+    <script>     $(document).ready(function(){
+        var $scrollButton = $(".scrollToTop");
+        var $screenWidth = $(window).width();
+        if ($screenWidth<480) {
+            $scrollButton.remove();
+        } else {
+            $('body').append($scrollButton);
+        };
+        $(window).scroll(function(){            
+            if($(this).scrollTop()>500)
+            {
+                $scrollButton.fadeIn("slow");
+            } else {
+                $scrollButton.fadeOut("slow");
+            };
+        });
+        $scrollButton.click(function(){
+            $("html, body").animate({scrollTop: 0}, 800);
+            return false;
+        });
+    
+    });</script>
+    </body>  
+
   </html>

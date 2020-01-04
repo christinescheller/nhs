@@ -8723,34 +8723,6 @@ h1, h2, h3, h4, h5,
     list-style: none;
     margin-right: 10px; }
 
-.makereservation .form-group label {
-  font-weight: 600;
-  color: #000000; }
-
-.makereservation .form-group .icon {
-  position: absolute;
-  top: 50% !important;
-  right: 20px;
-  font-size: 14px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  color: rgba(0, 0, 0, 0.7); }
-  @media (max-width: 767.98px) {
-    .makereservation .form-group .icon {
-      right: 10px; } }
-
-.makereservation .form-group .select-wrap {
-  position: relative; }
-  .makereservation .form-group .select-wrap select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; }
-
-@media (max-width: 767.98px) {
-  .makereservation .form-group .btn-primary {
-    width: 100%;
-    display: block; } }
 
     
 .instagram {
@@ -9033,10 +9005,10 @@ textarea.form-control {
   position: relative; }
   .heading-section .subheading {
     position: absolute;
-    top: -60px;
+    top: -70px;
     left: 0;
     right: 0;
-    font-weight: 575;
+    font-weight: 585;
     font-size: 110px;
     display: block;
     margin-bottom: 0;
@@ -9056,7 +9028,7 @@ textarea.form-control {
   .heading-section.heading-section-white p {
     color: rgba(255, 255, 255, 0.9); }
 
-.hotel-img,
+
 .img,
 .blog-img,
 .user-img {
@@ -9574,25 +9546,31 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
-    #myBtn {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 40px;
-      z-index: 99;
-      font-size: 18px;
-      border: none;
-      outline: none;
-      background-color: #002088;
-      color: white;
-      cursor: pointer;
-      padding: 10px;
-      border-radius: 4px;
-    }
-    
-    #myBtn:hover {
-      background-color: #555;
-    }
+
+    .scrollToTop{
+      width:70px; 
+      height:70px;    
+      text-align:center; 
+      position:fixed;
+      bottom:50px;
+      right:10px;
+      color: #002088;
+      display:none;
+      opacity: .9;
+  
+  }
+  .scrollToTop:active, .scrollToTop:hover  {
+      color: #002088;
+      text-decoration:none;
+      cursor:pointer;
+  }
+  
+
+    @media only screen and ( max-width: 767px ) {
+      .scrollToTop{
+          display:none !important;
+      }
+  }
    
     .staff {
       -moz-transition: all 0.3s ease;
@@ -9826,3 +9804,4 @@ textarea.form-control {
 	}
 }
 
+.btn-primary {margin-top: 5px;}

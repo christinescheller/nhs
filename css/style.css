@@ -9000,6 +9000,9 @@ textarea.form-control {
     -webkit-box-shadow: 0 0 0 0 rgba(255, 163, 35, 0);
     box-shadow: 0 0 0 0 rgba(255, 163, 35, 0); } }
 
+    
+
+
     /*for the middle sections of the home page*/
 .heading-section {
   position: relative; }
@@ -9027,6 +9030,20 @@ textarea.form-control {
     color: #fff; }
   .heading-section.heading-section-white p {
     color: rgba(255, 255, 255, 0.9); }
+
+    /* If the screen size is 601px or more, set the font-size of <div> to 30px */
+@media only screen and (min-width: 601px) {
+  .heading-section h2{
+    font-size: 50px;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 15px */
+@media only screen and (max-width: 600px) {
+  .heading-section h2{
+    font-size: 30px;
+  }
+}
 
 
 .img,
@@ -9861,7 +9878,10 @@ textarea.form-control {
       text-transform: uppercase; }
     .listing-item .listing-item-content h2 {
       text-align: center;
-      font-size: 18px; }
+      font-size: 35px;
+      font-weight: bold; 
+    }
+
       .listing-item .listing-item-content h2, .listing-item .listing-item-content h2 a {
         color: #fff; }
     .listing-item .listing-item-content span {

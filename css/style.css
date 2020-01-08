@@ -10063,7 +10063,3 @@ textarea.form-control {
               background: linear-gradient(to right, #188ef4 0%, #316ce8 100%);
           }
 
-/* This container class will allow a table to scroll horizontally on smaller screens. */
-.hscroll {
-  overflow-x: auto; /* Horizontal */
-}

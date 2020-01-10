@@ -9986,3 +9986,80 @@ textarea.form-control {
           -webkit-transition: .3s all ease-in-out;
           -o-transition: .3s all ease-in-out;
           transition: .3s all ease-in-out; }
+
+          @import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+          .guidanceEvent-home2 {
+            font-family: "Montserrat", sans-serif;
+            color: #8d97ad;
+            font-weight: 300;
+          }
+          
+          .guidanceEvent-home2 h1,
+          .guidanceEvent-home2 h2,
+          .guidanceEvent-home2 h3,
+          .guidanceEvent-home2 h4,
+          .guidanceEvent-home2 h5,
+          .guidanceEvent-home2 h6 {
+            color: #3e4555;
+          }
+          
+          .guidanceEvent-home2 .font-weight-medium {
+            font-weight: 500;
+          }
+          
+          .guidanceEvent-home2 .bg-light {
+            background-color: #f4f8fa !important;
+          }
+          
+          .guidanceEvent-home2 .subtitle {
+            color: #8d97ad;
+            line-height: 24px;
+          }
+          
+          .guidanceEvent-home2 .text-themecolor {
+            color: #316ce8;
+          }
+          
+          .guidanceEvent-home2 h5 {
+            line-height: 22px;
+            font-size: 18px;
+          }
+          
+          .guidanceEvent-home2 a.link {
+            color: #3e4555;
+          }
+          
+          .guidanceEvent-home2 a.link:hover {
+            color: #316ce8;
+          }
+          
+          .guidanceEvent-home2 .on-hover {
+            -webkit-transition: 0.2s ease-in;
+            -o-transition: 0.2s ease-in;
+            transition: 0.2s ease-in;
+          }
+          
+          .guidanceEvent-home2 .on-hover:hover {
+            -webkit-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
+          }
+          
+          .guidanceEvent-home2 .date-pos {
+            right: 10px;
+            top: 10px;
+          }
+          
+          .guidanceEvent-home2 .date-pos span {
+            font-size: 30px;
+            line-height: 30px;
+          }
+          .guidanceEvent-home2 .bg-info-gradiant {
+              background: #188ef4;
+              background: -webkit-linear-gradient(legacy-direction(to right), #188ef4 0%, #316ce8 100%);
+              background: -webkit-gradient(linear, left top, right top, from(#188ef4), to(#316ce8));
+              background: -webkit-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+              background: -o-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+              background: linear-gradient(to right, #188ef4 0%, #316ce8 100%);
+          }
+

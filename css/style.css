@@ -10063,5 +10063,13 @@ textarea.form-control {
               background: linear-gradient(to right, #188ef4 0%, #316ce8 100%);
           }
 
+.dropdown-submenu {
+  position: relative;
+}
 
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
  

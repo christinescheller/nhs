@@ -87,6 +87,15 @@
 	margin-right: -2px;
 }
 
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+
+
+
 </style>
    
 
@@ -180,11 +189,11 @@
 
 <section class="ftco-section ftco-animate">
 
-<div id="myCarousel" class="carousel slide ftco-animate shadow" data-ride="carousel">
+<div id="myCarousel" class="carousel slide ftco-animate shadow d-none d-sm-block" data-ride="carousel">
   <div class="ribbon ribbon-top-left"><span> Wise Words</span></div>
 
 	<!-- Wrapper for carousel items -->
-	<div class="carousel-inner">		
+	<div class="carousel-inner  d-flex">		
 		<div class="item carousel-item active">
 
 			<p class="testimonial">“All the secrets of the world are contained in books. Read at your own risk.”</p>
@@ -288,7 +297,7 @@
       <p class="overview"><b>Walter Cronkite</b></p>
 
     </div>
-    
+
 		
 	</div>
 	<!-- Carousel controls -->

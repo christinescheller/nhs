@@ -10062,3 +10062,208 @@ line-height: 30px;
   background: -o-linear-gradient(left, #188ef4 0%, #316ce8 100%);
   background: linear-gradient(to right, #188ef4 0%, #316ce8 100%);
 }
+
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+
+.box {
+  position: relative;
+  max-width: 600px;
+  width: 90%;
+  height: 250px;
+  background: #fff;
+  outline: 5px solid blue;
+  box-shadow: 0 0 15px rgba(126, 94, 94, 0.1);
+  
+}
+
+/* common */
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid #2980b9;
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: #3498db;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font: 700 18px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* top left*/
+.ribbon-top-left {
+  top: -10px;
+  left: -10px;
+}
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon-top-left::before {
+  top: 0;
+  right: 0;
+}
+.ribbon-top-left::after {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-top-left span {
+  right: -25px;
+  top: 30px;
+  transform: rotate(-45deg);
+}
+
+/* top right*/
+.ribbon-top-right {
+  top: -10px;
+  right: -10px;
+}
+.ribbon-top-right::before,
+.ribbon-top-right::after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.ribbon-top-right::before {
+  top: 0;
+  left: 0;
+}
+.ribbon-top-right::after {
+  bottom: 0;
+  right: 0;
+}
+.ribbon-top-right span {
+  left: -25px;
+  top: 30px;
+  transform: rotate(45deg);
+}
+
+/* bottom left*/
+.ribbon-bottom-left {
+  bottom: -10px;
+  left: -10px;
+}
+.ribbon-bottom-left::before,
+.ribbon-bottom-left::after {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon-bottom-left::before {
+  bottom: 0;
+  right: 0;
+}
+.ribbon-bottom-left::after {
+  top: 0;
+  left: 0;
+}
+.ribbon-bottom-left span {
+  right: -25px;
+  bottom: 30px;
+  transform: rotate(225deg);
+}
+
+/* bottom right*/
+.ribbon-bottom-right {
+  bottom: -10px;
+  right: -10px;
+}
+.ribbon-bottom-right::before,
+.ribbon-bottom-right::after {
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+.ribbon-bottom-right::before {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-bottom-right::after {
+  top: 0;
+  right: 0;
+}
+.ribbon-bottom-right span {
+  left: -25px;
+  bottom: 30px;
+  transform: rotate(-225deg);
+}
+
+/* Created by Erik Boesen with FIRST Robotics Competition Team 1418.
+    Offered under the MIT License. */
+
+    @font-face {
+      font-family: 'Adam';
+      src: url('adam.otf') format('opentype');
+      unicode-range: U+0000-00FF;
+  }
+  /* To be standard-compliant, this rule should be applied to *, but for compat it's restricted here. */
+  .banners,
+  .banners *,
+  .banner {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+  }
+  .banner-parent {
+      width: 100%;
+      overflow: auto; 
+      
+  }
+  .banner-parent .banners {
+      width: auto;
+      white-space: nowrap;
+  }
+  .banners li,
+  .banner {
+      line-height: 1.5;
+      font-family: 'Adam', sans-serif;
+      text-align: center;
+      vertical-align: top;
+      display: inline-block;
+      margin: 0 3px 30px;
+      width: 130px;
+      position: relative;
+      background: #0f4bcb;
+      color: white;
+      padding: 20px;
+      white-space: normal
+  }
+  .banners img,
+  .banner img {
+      width: 75px;
+      margin-bottom: 5px;
+  }
+  .banners li:after,
+  .banner:after {
+      content: '';
+      position: absolute;
+      display: block;
+      border: 65px solid #0f4bcb;
+      border-top-width: 5px;
+      border-bottom: 20px transparent solid;
+      top: 100%;
+      left: 0;
+  }
+  .banners li,
+  .banners li:after,
+  .banner,
+  .banner:after {
+      -webkit-filter: drop-shadow(0 10px 5px rgba(0, 0, 0, .1));
+      filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="5" /><feOffset dx="1" dy="11" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+      -webkit-filter: drop-shadow(0 10px 5px rgba(0, 0, 0, .1));
+              filter: drop-shadow(0 10px 5px rgba(0, 0, 0, .1));
+  }
